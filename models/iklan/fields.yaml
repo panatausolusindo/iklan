@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    client:
+        label: Pilih Client
+        type: relation
+        nameFrom: nama
+        span: full
+    link:
+        label: Link Iklan
+        comment: Masukkan target url untuk iklan ini.
+        type: text
+        span: auto
+    tampil_sd:
+        label: Tampil Sampai Dengan
+        comment: Iklan tampil sampai dengan?
+        type: datepicker
+        mode: date
+        format: d-m-Y
+        span: auto
+    penempatan:
+        type: partial
+        path: $/panatausolusindo/iklan/controllers/iklan/_load_penempatan.htm
+

@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    nama:
+        label: Nama Client
+        searchable: true
+    keterangan:
+        label: Keterangan
+        searchable: true
+        sortable: false

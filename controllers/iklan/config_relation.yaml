@@ -1,0 +1,9 @@
+penempatan:
+  label: Penempatan Iklan
+  view:
+    list: $/panatausolusindo/iklan/models/iklanditempat/columns.yaml
+    toolbarButtons: 
+      - create
+      - delete
+  manage:
+    form: $/panatausolusindo/iklan/models/iklanditempat/fields.yaml

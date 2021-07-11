@@ -1,0 +1,9 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    penempatan:
+        label: Tempat
+        relation: tempat
+        select: concat(nama, ' ', keterangan)

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Client Iklan
+
+# Model Form Field configuration
+form: $/panatausolusindo/iklan/models/clientiklan/fields.yaml
+
+# Model Class name
+modelClass: PanatauSolusindo\Iklan\Models\ClientIklan
+
+# Default redirect location
+defaultRedirect: panatausolusindo/iklan/clientiklan
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: panatausolusindo/iklan/clientiklan/update/:id
+    redirectClose: panatausolusindo/iklan/clientiklan
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: panatausolusindo/iklan/clientiklan
+    redirectClose: panatausolusindo/iklan/clientiklan
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

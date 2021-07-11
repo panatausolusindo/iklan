@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    nama:
+        label: Nama Tempat
+        comment: Nama tempat iklan di load.
+        type: text
+        span: full
+    ukuran_lebar_gambar:
+        label: Lebar Gambar (px)
+        comment: Ukuran lebar gambar dalam pixel.
+        span: auto
+        type: number
+    ukuran_tinggi_gambar:
+        label: Tinggi Gambar (px)
+        comment: Ukuran inggi gambar dalam pixel.
+        span: auto
+        type: number 
+    keterangan:
+        label: Keterangan
+        comment: Keterangan singkat client.
+        span: full
+        type: textarea
+        size: small

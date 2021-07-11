@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    tempat:
+        label: Tempat Iklan
+        comment: Tempat iklan ditempatkan pada halaman.
+        type: relation
+        select: concat(nama, ' ', keterangan)
+    gambar_iklan:
+        label: Gambar Iklan
+        comment: Pilih gambar untuk iklan
+        type: fileupload
+        mode: image
+        useCaption: false

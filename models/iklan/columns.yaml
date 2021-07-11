@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    nama_client:
+        label: Client
+        relation: client
+        select: nama
+    link: 
+        label: Link
+        type: text
+    tampil_sd:
+        label: Tampil s.d.
+        type: date
+        format: d-m-Y
+

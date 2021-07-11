@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    nama:
+        label: Nama Client
+        comment: Masukkan nama client.
+        type: text
+        span: full
+    keterangan:
+        label: Keterangan
+        comment: Keterangan singkat client.
+        type: textarea
+        span: full
+        size: small

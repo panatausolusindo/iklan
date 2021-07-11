@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Tempat Iklan
+
+# Model Form Field configuration
+form: $/panatausolusindo/iklan/models/tempatiklan/fields.yaml
+
+# Model Class name
+modelClass: PanatauSolusindo\Iklan\Models\TempatIklan
+
+# Default redirect location
+defaultRedirect: panatausolusindo/iklan/tempatiklan
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: panatausolusindo/iklan/tempatiklan/update/:id
+    redirectClose: panatausolusindo/iklan/tempatiklan
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: panatausolusindo/iklan/tempatiklan
+    redirectClose: panatausolusindo/iklan/tempatiklan
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

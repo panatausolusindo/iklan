@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    nama:
+        label: Nama Tempat
+        type: text
+        searchable: true
+    ukuran_lebar_gambar:
+        label: Ukuran Lebar
+        type: number
+    ukuran_tinggi_gambar:
+        label: Ukuran Tinggi
+        type: number
+    keterangan:
+        label: Keterangan
+        searchable: true
+        type: text
+    
