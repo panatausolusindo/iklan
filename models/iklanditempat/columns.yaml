@@ -7,3 +7,11 @@ columns:
         label: Tempat
         relation: tempat
         select: concat(nama, ' ', keterangan)
+    gambar_iklan:
+        label: Gambar Iklan
+        type: image
+        sortable: false
+        width: 200
+        options:
+            quality: 50
+            mode: fit

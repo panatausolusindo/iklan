@@ -1,8 +1,8 @@
 {
     "name": "panatausolusindo/iklan-plugin",
     "type": "october-plugin",
-    "description": "No description provided yet...",
+    "description": "Untuk mengatur iklan",
     "require": {
-        "composer/installers": "~1.0"
+        "php": ">=7.2.9"
     }
 }
