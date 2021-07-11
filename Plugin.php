@@ -50,10 +50,8 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'PanatauSolusindo\Iklan\Components\MyComponent' => 'myComponent',
+            'PanatauSolusindo\Iklan\Components\RenderIklan' => 'renderIklan',
         ];
     }
 

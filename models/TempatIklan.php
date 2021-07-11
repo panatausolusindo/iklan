@@ -27,7 +27,9 @@ class TempatIklan extends DatabaseModel
     /**
      * @var array rules for validation
      */
-    public $rules = [];
+    public $rules = [
+        'nama' => 'required|unique:panatausolusindo_iklan_tempat',
+    ];
 
     /**
      * @var array Attributes to be cast to native types

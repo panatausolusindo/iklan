@@ -22,7 +22,9 @@ class ClientIklan extends DatabaseModel
     /**
      * @var array fillable attributes are mass assignable
      */
-    protected $fillable = [];
+    protected $fillable = [
+        'nama' => 'require|unique:panatausolusindo_iklan_client'
+    ];
 
     /**
      * @var array rules for validation
