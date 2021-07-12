@@ -1,0 +1,13 @@
+<?php
+if($record->tempat == null) 
+{
+    // belum ada tempat tidak usah!
+    ?>Tempat Belum Dipilih<?php
+} else {
+    $l_separoh = intdiv($record->tempat->ukuran_lebar_gambar, 2);
+    $p_separoh = intdiv($record->tempat->ukuran_panjang_gambar, 2);
+    if($record->gambar_iklan != null) {
+        ?>
+        <img src="<?=$record->gambar_iklan->getThumb($l_separoh, $p_separoh, ['quality' => 50]) ?>" />
+    <?php }
+}

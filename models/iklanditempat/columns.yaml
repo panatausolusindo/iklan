@@ -9,9 +9,5 @@ columns:
         select: concat(nama, ' ', keterangan)
     gambar_iklan:
         label: Gambar Iklan
-        type: image
-        sortable: false
-        width: 200
-        options:
-            quality: 50
-            mode: fit
+        type: partial
+        path: $/panatausolusindo/iklan/controllers/iklan/_load_gambar_iklan.htm
