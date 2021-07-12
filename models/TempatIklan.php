@@ -29,6 +29,8 @@ class TempatIklan extends DatabaseModel
      */
     public $rules = [
         'nama' => 'required|unique:panatausolusindo_iklan_tempat',
+        'ukuran_lebar_gambar' => 'required|min:0',
+        'ukuran_tinggi_gambar' => 'required|min:0',
     ];
 
     /**
