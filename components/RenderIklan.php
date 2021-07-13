@@ -1,5 +1,6 @@
 <?php namespace PanatauSolusindo\Iklan\Components;
 
+use Carbon\Carbon;
 use Cms\Classes\ComponentBase;
 use PanatauSolusindo\Iklan\Models\Iklan;
 use PanatauSolusindo\Iklan\Models\TempatIklan;
@@ -32,15 +33,20 @@ class RenderIklan extends ComponentBase
 
     public function getPenempatanIklanIniOptions()
     {
-        return TempatIklan::pluck('nama', 'id')->toArray();
+        return TempatIklan::pluck('nama', 'nama')->toArray();
     }
 
     public function onRun()
     {
         $penempatanIklanIni = $this->property('penempatanIklanIni');
+        $now = Carbon::now()->format('Y-m-d');
         $this->daftarIklanTerpilih = Iklan::with(['penempatan' => function($query) use($penempatanIklanIni){
-            $query->where('tempat_id', $penempatanIklanIni);
-        }, 'penempatan.gambar_iklan', 'penempatan.tempat'])->get();
+            $query->whereHas('tempat', function($q) use($penempatanIklanIni) {
+                $q->where('nama', $penempatanIklanIni);
+            });
+        }, 'penempatan.tempat', 'penempatan.gambar_iklan'])
+        ->where('tampil_sd', '>=', $now)
+        ->get();
         
     }
 }

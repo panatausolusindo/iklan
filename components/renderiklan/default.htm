@@ -1,11 +1,12 @@
 {% set daftarIklanTerpilih = __SELF__.daftarIklanTerpilih %}
-<div class="pesan-sponsor">
+<div class="pesan-sponsor owl-carousel">
 {% for iklan in daftarIklanTerpilih %}
     {% for t in iklan.penempatan %}
     <div class="pesan-sponsor-item">
+        <!-- pesan sponsor {{ t.tempat.nama }} -->
         <a href="{{ iklan.link }}">
-            <img 
-            src="{{ t.gambar_iklan|resize(ttempat.ukuran_lebar_gambar,t.tempat.ukuran_tinggi_gambar, {method:'crop'}) }}" 
+            <img class="img-fluid"
+            src="{{ t.gambar_iklan|resize(t.tempat.ukuran_lebar_gambar,t.tempat.ukuran_tinggi_gambar, {method:'crop'}) }}" 
             alt="">
         </a>
     </div>

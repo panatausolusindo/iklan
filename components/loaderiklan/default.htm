@@ -1,0 +1,16 @@
+<script>
+$(function($) {
+    if($('.pesan-sponsor').length > 0) {
+        $('.pesan-sponsor').each(function() {
+            isLoop = $(this).children().length > 1
+            $(this).owlCarousel({ 
+                autoplay:true,
+                items:1,
+                center: true,
+                loop: isLoop,
+                nav: false 
+            })
+        })
+    }
+})
+</script>

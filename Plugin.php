@@ -52,6 +52,7 @@ class Plugin extends PluginBase
     {
         return [
             'PanatauSolusindo\Iklan\Components\RenderIklan' => 'renderIklan',
+            'PanatauSolusindo\Iklan\Components\LoaderIklan' => 'loaderIklan',
         ];
     }
 
