@@ -1,5 +1,5 @@
 {
-    "name": "panatausolusindo/iklan-plugin",
+    "name": "panatausolusindo/iklan",
     "type": "october-plugin",
     "description": "Untuk mengatur iklan",
     "require": {
