@@ -48,6 +48,9 @@ Tempat adalah lokasi pada template, pilihan render iklan. Setiap tempat akan mem
 
 Setelah data telah terisi dilanjutkan dengan entri iklan.
 
+![image](https://user-images.githubusercontent.com/1888139/125639718-d748e45e-ec5c-46b7-afce-5800a669d2d5.png)
+
+
 ## Komponen Render Iklan
 
 Ini digunakan sebagai komponen untuk melakukan render berdasarkan `nama` tempat kita ingin gambar iklan muncul. Misalnya pada iklan di `Header` kita gunakan komponen dengan setting sebagai berikut:
